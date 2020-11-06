@@ -71,7 +71,7 @@ img {
 .section-subtitle {
   display: block;
   font-size: 0.813rem;
-  color: #151122;
+  color: #211a35;
   text-align: center;
   font-weight: 700;
   margin-bottom: .25rem;
@@ -641,10 +641,11 @@ img {
 
 .footer__copy {
   font-size: 0.813rem;
-  color: #151122;
+  color: #211a35;
 }
 
 /* ======= Media Quaries ======= */
+/*___iPad____*/
 @media screen and (min-width: 768px) {
   .home__button {
     width: initial;
@@ -658,8 +659,8 @@ img {
   .works__container,
   .contact__container,
   .contact__inputs {
-/*     -ms-grid-columns: (1fr)[2];
- */        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
   .about__data {
     text-align: initial;
@@ -689,12 +690,13 @@ img {
     background: none;
   }
   .footer__container {
-    background-color: #151122;
+    background-color: #211a35;
     padding: 3rem 0;
     border-radius: .5rem;
   }
 }
 
+/*___dator____*/
 @media screen and (min-width: 1024px) {
   body {
     margin: 0;
@@ -718,7 +720,10 @@ img {
     width: 200px;
     height: 200px;
   }
-  #about, #works, #contact {
+  .about__img img {
+    display: none !important;
+  }
+  #about, #works, #contact, #education, .education {
     padding: 3rem 0 2rem;
     height: 100vh;
   }

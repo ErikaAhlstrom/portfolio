@@ -10,9 +10,10 @@ $font-semi-bold: 600;
 $font-bold: 700;
 
 /* ======= COLORS NEW ======= */
+
 $first-color: #A181FF;
 $first-color-dark: #45386e;
-$first-color-draken: #151122;
+$first-color-draken: #211a35;
 $text-color: #4d4453;
 $first-color-light: #ded8e0;
 $first-color-lighten: #fdfaff;
@@ -642,6 +643,7 @@ img {
 
 /* ======= Media Quaries ======= */
 
+/*___iPad____*/
 @media screen and (min-width: 768px) {
     .home__button{
         width: initial;
@@ -706,7 +708,7 @@ img {
 
 
 }
-
+/*___dator____*/
 @media screen and (min-width: 1024px) {
     body {
         margin: 0;
@@ -738,7 +740,11 @@ img {
         height: 200px;
     }
 
-    #about, #works, #contact {
+    .about__img img{
+        display: none !important;
+    }
+
+    #about, #works, #contact, #education, .education {
         padding: 3rem 0 2rem;
         height: 100vh;
 
