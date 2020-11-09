@@ -302,7 +302,10 @@ img {
 }
 
 /* ======= About ======= */
-
+#about {
+    padding: 3rem 0 2rem;
+    margin-top: 4.5rem;
+}
 .about__container {
     row-gap: 2rem;
 }
@@ -312,7 +315,7 @@ img {
 }
 
 .about__description {
-    margin-bottom: $mb-4;
+    margin: 0 1rem $mb-4 1rem;
 
 }
 
@@ -395,27 +398,17 @@ img {
 .skills__html {
     width: 80%;   
 }
+.skills__css {
+    width: 70%;   
+}
 .skills__js {
-    width: 90%;   
-}
-.skills__react {
-    width: 70%;   
-}
-.skills__angular {
     width: 60%;   
 }
-.skills__php {
-    width: 80%;   
-}
-.skills__node {
+.skills__ui {
     width: 70%;   
 }
-.skills__firetbase {
-    width: 60%;   
-}
-.skills__python {
-    width: 70%;   
-}
+
+
 
 /* ======= Education ======= */
 
@@ -612,7 +605,7 @@ img {
 }
 
 .footer__title {
-    font-size: $h1-font-size;
+    font-size: $h3-font-size;
     margin-bottom: $mb-2;
 
 }
@@ -624,7 +617,7 @@ img {
 }
 
 .footer__social {
-    margin: 3rem 0;
+    margin: 1rem 0;
 }
 
 .social__links {
@@ -652,7 +645,8 @@ img {
 
 .footer__copy {
     font-size: $small-font-size;
-    color: $first-color-draken;
+    color: $first-color-lighten;
+  
 
 }
 
@@ -677,6 +671,7 @@ img {
     .contact__inputs {
         grid-template-columns: repeat(2, 1fr);
     }
+
 
     .about__data {
         text-align: initial;
@@ -713,12 +708,12 @@ img {
 
     .footer {
         background: none;
+        padding-bottom: 0;
     }
 
     .footer__container {
-        background-color: $first-color-draken;
+        background-color: $first-color-dark;
         padding: 3rem 0;
-        border-radius: .5rem;
     }
 
 
@@ -762,11 +757,16 @@ img {
     .education__nackademin-text {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        font-size: $small-font-size;
     }
 
-    #about, #works, #contact, #education, .education {
+    #about, #works, #education, .education {
         padding: 3rem 0 2rem;
         height: 100vh;
+    }
+
+    .footer {
+        width: 100%;
 
     }
 

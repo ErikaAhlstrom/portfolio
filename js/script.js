@@ -1,11 +1,11 @@
-/* ======MENU SHOW Y HIDDEN=====*/
+/* ======MENU SHOW OR HIDDEN=====*/
 const   navMenu = document.getElementById("nav-menu"),
         toggleMenu = document.getElementById("nav-toggle"),
         closeMenu = document.getElementById("nav-close");
 
 // SHOW
 toggleMenu.addEventListener("click", (e) => {
-    navMenu.classList.toggle("show")
+    navMenu.classList.add("show")
 })      
 
 // HIDE

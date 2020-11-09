@@ -275,6 +275,11 @@ img {
 }
 
 /* ======= About ======= */
+#about {
+  padding: 3rem 0 2rem;
+  margin-top: 4.5rem;
+}
+
 .about__container {
   row-gap: 2rem;
 }
@@ -284,7 +289,7 @@ img {
 }
 
 .about__description {
-  margin-bottom: 2rem;
+  margin: 0 1rem 2rem 1rem;
 }
 
 .about__img {
@@ -368,31 +373,15 @@ img {
   width: 80%;
 }
 
+.skills__css {
+  width: 70%;
+}
+
 .skills__js {
-  width: 90%;
-}
-
-.skills__react {
-  width: 70%;
-}
-
-.skills__angular {
   width: 60%;
 }
 
-.skills__php {
-  width: 80%;
-}
-
-.skills__node {
-  width: 70%;
-}
-
-.skills__firetbase {
-  width: 60%;
-}
-
-.skills__python {
+.skills__ui {
   width: 70%;
 }
 
@@ -613,7 +602,7 @@ img {
 }
 
 .footer__title {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -623,7 +612,7 @@ img {
 }
 
 .footer__social {
-  margin: 3rem 0;
+  margin: 1rem 0;
 }
 
 .social__links {
@@ -656,7 +645,7 @@ img {
 
 .footer__copy {
   font-size: 0.813rem;
-  color: #211a35;
+  color: #fdfaff;
 }
 
 /* ======= Media Quaries ======= */
@@ -703,11 +692,11 @@ img {
   }
   .footer {
     background: none;
+    padding-bottom: 0;
   }
   .footer__container {
-    background-color: #211a35;
+    background-color: #45386e;
     padding: 3rem 0;
-    border-radius: .5rem;
   }
 }
 
@@ -743,10 +732,14 @@ img {
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+    font-size: 0.813rem;
   }
-  #about, #works, #contact, #education, .education {
+  #about, #works, #education, .education {
     padding: 3rem 0 2rem;
     height: 100vh;
+  }
+  .footer {
+    width: 100%;
   }
   .bd-grid {
     margin-left: auto;
