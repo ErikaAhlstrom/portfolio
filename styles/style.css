@@ -207,7 +207,7 @@ img {
 .home__img {
   width: 160px;
   height: 160px;
-  background-image: url(/img/erika_1.png);
+  background-image: url(./img/erika_1);
   background-position: center;
   background-color: #A181FF;
   background-size: cover;
