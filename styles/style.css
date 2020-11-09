@@ -151,7 +151,7 @@ img {
   margin-bottom: 2rem;
 }
 
-.nav__item a {
+.nav__link {
   font-size: 1rem;
   text-transform: uppercase;
   color: #fdfaff;
@@ -160,7 +160,7 @@ img {
   transition: .3s;
 }
 
-.nav__item a:hover {
+.nav__link:hover {
   color: #4d4453;
 }
 

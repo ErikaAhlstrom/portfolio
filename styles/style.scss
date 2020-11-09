@@ -184,17 +184,21 @@ img {
 
 .nav__item {
     margin-bottom: $mb-4;
-    a {
-        font-size: 1rem;
-        text-transform: uppercase;
-        color: $first-color-lighten;
-        font-weight: $font-bold;
-        transition: .3s;
-    }
-    a:hover{
-        color: $text-color;
-    }
+
 }
+
+.nav__link {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: $first-color-lighten;
+    font-weight: $font-bold;
+    transition: .3s;
+}
+
+.nav__link:hover{
+    color: $text-color;
+}
+
 
 .nav__toggle {
     color: $first-color-dark;
