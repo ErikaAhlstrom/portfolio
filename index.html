@@ -41,20 +41,17 @@
 <section class="home" id="home"> 
 <div class="home__container bd-grid">
     <div class="home__data">
-        <div class="home__img">
-            <div class="img"></div>
-            <!-- <img src="/img/ES_Beige2.jpg" alt="portrait"> -->
-        </div>
+        <div role="img" aria-label="selfportrait" class="home__img img"></div>
         <h1 class="home__title">Erika Soldh Ahlström</h1>
         <span class="home__proffession">Fullstack Developer</span>
 
-        <div class="home__social">
-            <a href="https://www.linkedin.com/in/erika-soldh-ahlstr%C3%B6m-72b34083/" class="home__social-link"><i class='bx bxl-linkedin' ></i></a>
-            <a href="https://github.com/ErikaAhlstrom" class="home__social-link"><i class='bx bxl-github' ></i></a>
-            <a href="https://www.facebook.com/erika.ahlstrom" class="home__social-link"><i class='bx bxl-facebook'></i></a>
-            <a href="https://open.spotify.com/artist/7iJ1u9JKtY7pIixJ21AeFK?si=0BjRtSNXQnCPvTQ0XwOe_w" class="home__social-link"><i class='bx bxl-spotify'></i></a>
+        <div aria-label="Social media links" class="home__social">
+            <a aria-label="Go to my linked in page" href="https://www.linkedin.com/in/erika-soldh-ahlstr%C3%B6m-72b34083/" class="home__social-link"><i class='bx bxl-linkedin' ></i></a>
+            <a aria-label="Go to my github page"href="https://github.com/ErikaAhlstrom" class="home__social-link"><i class='bx bxl-github' ></i></a>
+            <a aria-label="Go to my facebook page"href="https://www.facebook.com/erika.ahlstrom" class="home__social-link"><i class='bx bxl-facebook'></i></a>
+            <a aria-label="Go to my spotify page"href="https://open.spotify.com/artist/7iJ1u9JKtY7pIixJ21AeFK?si=0BjRtSNXQnCPvTQ0XwOe_w" class="home__social-link"><i class='bx bxl-spotify'></i></a>
         </div>
-        <a href="#" class="button home__button">Download Resume</a>
+        <a aria-label="Go to dropbox to download resume" href="#" class="button home__button">Download Resume</a>
     </div>
 </div>
 </section>
@@ -87,7 +84,7 @@
                     <span>info@erikasoldh.se</span>
                 </div>
             </div>
-            <img src="/img/ES_Beige2.jpg" alt="" class="about__img">
+            <img src="/img/erika_2.jpg" alt="selfportrait" class="about__img">
 
 
             <!-- <div class="about__information">
@@ -230,12 +227,6 @@
 </section>
 
 
-<!--======= SERVICES ========-->    
-
-<!-- <section class="services section" id="services">
-   
-</section> -->
-
 <!--======= WORKS ========-->    
 
 <section class="works section" id="works">
@@ -244,33 +235,33 @@
 
     <div class="works__container bd-grid">
         <div class="works__img">
-            <img src="/img/quiz2.png" alt="quiz-img">
+            <img src="/img/works_quiz.png" alt="quiz">
             <div class="works__data">
-                <a href="https://erikaahlstrom.github.io/quiz/" class="works__link"><i class='bx bx-link-alt' ></i></a>
+                <a aria-label="Go to quiz page" href="https://erikaahlstrom.github.io/quiz/" class="works__link"><i class='bx bx-link-alt' ></i></a>
                 <span class="works__title">Quiz</span>
             </div>
         </div>
         <div class="works__img">
-            <img src="/img/event2.png" alt="quiz-img">
+            <img src="/img/works_event.png" alt="event">
 
             <div class="works__data">
-                <a href="#" class="works__link"><i class='bx bx-link-alt' ></i></a>
+                <a aria-label="Go to event page" href="https://erikaahlstrom.github.io/Acmeevents/" class="works__link"><i class='bx bx-link-alt' ></i></a>
                 <span class="works__title">Event Page</span>
             </div>
         </div>
         <div class="works__img">
-            <img src="/img/to-do2.png" alt="quiz-img">
+            <img src="/img/works_to-do.png" alt="to-do">
 
             <div class="works__data">
-                <a href="#" class="works__link"><i class='bx bx-link-alt' ></i></a>
+                <a aria-label="temporarly inactive" href="#" class="works__link"><i class='bx bx-link-alt' ></i></a>
                 <span class="works__title">To Do List</span>
             </div>
         </div>
         <div class="works__img">
-            <img src="/img/yatzy.png" alt="quiz-img">
+            <img src="/img/works_yatzy.png" alt="yatzy">
 
             <div class="works__data">
-                <a href="#" class="works__link"><i class='bx bx-link-alt' ></i></a>
+                <a aria-label="Go to yatzy page" href="https://erikaahlstrom.github.io/YatzyCollab/" class="works__link"><i class='bx bx-link-alt' ></i></a>
                 <span class="works__title">Yatzy</span>
             </div>
         </div>
@@ -286,13 +277,13 @@
     <div class="contact__container bd-grid">
         <form action="" class="contact__form">
             <div class="contact__inputs">
-                <input type="text" placeholder="Name" class="contact__input">
-                <input type="mail" placeholder="Email" class="contact__input">
+                <input aria-label="name input" type="text" placeholder="Name" class="contact__input">
+                <input aria-label="email input"type="mail" placeholder="Email" class="contact__input">
             </div>
 
-            <input type="text" placeholder="Project" class="contact__input">
-            <textarea name="" id="" cols="0" rows="10" placeholder="Message" class="contact__input"></textarea>
-            <input type="submit" value="send message" class="button contact__button">
+            <input aria-label="project input" type="text" placeholder="Project" class="contact__input">
+            <textarea aria-label="content input" name="" id="" cols="0" rows="10" placeholder="Message" class="contact__input"></textarea>
+            <input role="button" aria-label="submit message" type="submit" value="send message" class="button contact__button">
         </form>
 
         <div>
@@ -306,7 +297,7 @@
                 <span class="contact__text">info@erikasoldh.se</span>
             </div>
             <div class="contact__info">
-                <h3 class="contact__subtitle">Locaction</h3>
+                <h3 class="contact__subtitle">Location</h3>
                 <span class="contact__text">Stockholm, Sweden </span>
         
             </div>
@@ -320,11 +311,11 @@
     <div class="footer__container bd-grid">
         <h1 class="footer_title">Erika Soldh Ahlström</h1>
         <p class="footer__description">I am currently looking for a company where I can do my internship. Don't hesitate to contact me if you're intrested.</p>
-        <div class="social__links">
-            <div class="footer__social"><a href="https://www.linkedin.com/in/erika-soldh-ahlstr%C3%B6m-72b34083/" class="footer__link"><i class='bx bxl-linkedin'></i></a></div>
-            <div class="footer__social"><a href="https://github.com/ErikaAhlstrom" class="footer__link"><i class='bx bxl-github'></i></a></div>
-            <div class="footer__social"><a href="https://www.facebook.com/erika.ahlstrom" class="footer__link"><i class='bx bxl-facebook'></i></a></div>
-            <div class="footer__social"><a href="https://open.spotify.com/artist/7iJ1u9JKtY7pIixJ21AeFK?si=0BjRtSNXQnCPvTQ0XwOe_w" class="footer__link"><i class='bx bxl-spotify'></i></a></div>
+        <div aria-label="Social media links" class="social__links">
+            <div class="footer__social"><a aria-label="Go to my linked in page" href="https://www.linkedin.com/in/erika-soldh-ahlstr%C3%B6m-72b34083/" class="footer__link"><i class='bx bxl-linkedin'></i></a></div>
+            <div class="footer__social"><a aria-label="Go to my github page" href="https://github.com/ErikaAhlstrom" class="footer__link"><i class='bx bxl-github'></i></a></div>
+            <div class="footer__social"><a aria-label="Go to my facebook page" href="https://www.facebook.com/erika.ahlstrom" class="footer__link"><i class='bx bxl-facebook'></i></a></div>
+            <div class="footer__social"><a aria-label="Go to my spotify page" href="https://open.spotify.com/artist/7iJ1u9JKtY7pIixJ21AeFK?si=0BjRtSNXQnCPvTQ0XwOe_w" class="footer__link"><i class='bx bxl-spotify'></i></a></div>
    
         </div>
     </div>
