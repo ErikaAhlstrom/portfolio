@@ -477,6 +477,20 @@ img {
 
 }
 
+.education__description {
+    margin-bottom: $mb-5;
+    border: 4px solid $first-color;
+    border-radius: .25rem;
+    margin: $mb-2;
+    padding: $mb-2;
+    transition: .3s;
+}
+
+.education__description:hover {
+    background-color: $first-color;
+    color: $first-color-lighten;
+}
+
 /* ======= Works ======= */
 
 .works__container {
@@ -517,6 +531,7 @@ img {
     padding: .25rem;
     border-radius: .25rem;
     margin-bottom: $mb-2;
+
 
 }
 
@@ -742,6 +757,11 @@ img {
 
     .about__img img{
         display: none !important;
+    }
+
+    .education__nackademin-text {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     #about, #works, #contact, #education, .education {
