@@ -46,6 +46,14 @@ $mb-5: 2.5rem;
 /* ======= Z index ======= */
 $z-fixed: 100;
 
+/* ======= Mixins ======= */
+
+@mixin flexAlignCenter {
+    display: flex;
+    align-items: center;
+}
+
+
 @media screen and (min-width: 768px) {
     $h1-font-size: 2.25rem;
     $h2-font-size: 1.5rem;
@@ -144,10 +152,9 @@ img {
 }
 
 .nav {
+    @include flexAlignCenter();
     height: $header-height;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .nav__logo {
@@ -155,17 +162,15 @@ img {
 }
 
 .nav__menu {
+    @include flexAlignCenter();
     position: fixed;
     top: 0;
     left: -100%;
     width: 90%;
     height: 100vh;
     padding: 3rem;
-    display: flex;
-    align-items: center;
     background-color: $first-color;
     transition: .5s;
-
 }
 
 .nav__close {
@@ -179,24 +184,21 @@ img {
 
 .nav__item {
     margin-bottom: $mb-4;
-}
-
-.nav__link {
-    font-size: 1rem;
-    text-transform: uppercase;
-    color: $first-color-lighten;
-    font-weight: $font-bold;
-    transition: .3s;
-}
-
-.nav__link:hover {
-    color: $text-color;
+    a {
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: $first-color-lighten;
+        font-weight: $font-bold;
+        transition: .3s;
+    }
+    a:hover{
+        color: $text-color;
+    }
 }
 
 .nav__toggle {
     color: $first-color-dark;
     font-size: 2rem;
-
     cursor: pointer;
 }
 
@@ -220,9 +222,8 @@ img {
 }
 
 .home__data {
-    display: flex;
+    @include flexAlignCenter();
     flex-direction: column;
-    align-items: center;
     height: max-content;
     text-align: center;
 
@@ -255,21 +256,20 @@ img {
 
 .home__social {
     margin-bottom: 5rem;
+    a {
+        display: inline-flex;
+        background-color: $first-color;
+        color: $first-color-lighten;
+        border-radius: 50%;
+        padding: .40rem;
+        margin: 0 $mb-1;
+        transition: 0.3s;
+    }
+    a:hover {
+        background-color: $first-color-dark;
+    }
 }
 
-.home__social-link {
-    display: inline-flex;
-    background-color: $first-color;
-    color: $first-color-lighten;
-    border-radius: 50%;
-    padding: .40rem;
-    margin: 0 $mb-1;
-    transition: 0.3s;
-}
-.home__social-link:hover {
-    background-color: $first-color-dark;
-
-}
 
 
 /* ======= Buttons ======= */
@@ -290,15 +290,6 @@ img {
 
 .button:hover {
     background-color: $first-color-dark; 
-}
-
-.button__light {
-    background-color: $first-color-lighten;
-    color: $first-color;
-}
-
-.button__light:hover {
-
 }
 
 /* ======= About ======= */
@@ -338,8 +329,7 @@ img {
 }
 
 .about__information-data {
-    display: flex;
-    align-items: center;
+    @include flexAlignCenter();
     padding-left: 1.5rem;
     margin-bottom: $mb-3;
 }
@@ -504,29 +494,26 @@ img {
 }
 
 .works__data {
+    @include flexAlignCenter();
     position: absolute;
     bottom: -100%; 
     width: 100%;
     height: 100%;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;   
     background-color: rgba($first-color-dark, $alpha: .9);
     transition: .3s;
+    a {
+        display: inline-flex;
+        font-size: 3rem;
+        background-color: $first-color-lighten;
+        color: $first-color;
+        padding: .25rem;
+        border-radius: .25rem;
+        margin-bottom: $mb-2;
+    }
 }
 
-.works__link {
-    display: inline-flex;
-    font-size: 3rem;
-    background-color: $first-color-lighten;
-    color: $first-color;
-    padding: .25rem;
-    border-radius: .25rem;
-    margin-bottom: $mb-2;
-
-
-}
 
 .works .section-title {
     color: $first-color-lighten;
@@ -623,24 +610,21 @@ img {
 .social__links {
     display: flex;
     justify-content: center;
-}
+    a {
+        display: inline-flex;
+        background-color: $first-color;
+        color: $first-color-lighten;
+        font-size: 1.1rem;
+        border-radius: 50%;
+        padding: .40rem;
+        margin: 0 $mb-1;
+        transition: .3s;
+    }
 
-.footer__link {
-    display: inline-flex;
-    background-color: $first-color;
-    color: $first-color-lighten;
-    font-size: 1.1rem;
-    border-radius: 50%;
-    padding: .40rem;
-    margin: 0 $mb-1;
-    transition: .3s;
-
-}
-
-.footer__link:hover {
-    background-color: $first-color-lighten;
-    color: $first-color;
-
+    a:hover {
+        background-color: $first-color-lighten;
+        color: $first-color;
+    }
 }
 
 .footer__copy {
