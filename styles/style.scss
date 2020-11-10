@@ -9,7 +9,7 @@ $font-medium: 500;
 $font-semi-bold: 600;
 $font-bold: 700;
 
-/* ======= COLORS NEW ======= */
+/* ======= COLORS PURPLE ======= */
 
 $first-color: #A181FF;
 $first-color-dark: #45386e;
@@ -17,6 +17,15 @@ $first-color-draken: #211a35;
 $text-color: #4d4453;
 $first-color-light: #ded8e0;
 $first-color-lighten: #fdfaff;
+
+/* ======= COLORS CONTRAST ======= */
+
+/* $first-color: #4000ff;
+$first-color-dark: #29068f;
+$first-color-draken: #0d032b;
+$text-color: #39383b;
+$first-color-light: #d9d8e0;
+$first-color-lighten: #fafaff; */
 
 /* ======= COLORS OLD ======= */
 
@@ -647,8 +656,8 @@ img {
     }
 
     .nav__menu {
-        width: $nav-width;
-
+        width: $nav-width * 3;
+      
     }
 
     .about__container,
@@ -724,6 +733,7 @@ img {
     .nav__menu {
         left: 0;
         background-color: $first-color;
+        width: $nav-width;
 
     }
 

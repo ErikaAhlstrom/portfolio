@@ -1,6 +1,13 @@
 /* ======= ROOT ======= */
 /* ======= FONT WEIGHT ======= */
-/* ======= COLORS NEW ======= */
+/* ======= COLORS PURPLE ======= */
+/* ======= COLORS CONTRAST ======= */
+/* $first-color: #4000ff;
+$first-color-dark: #29068f;
+$first-color-draken: #0d032b;
+$text-color: #39383b;
+$first-color-light: #d9d8e0;
+$first-color-lighten: #fafaff; */
 /* ======= COLORS OLD ======= */
 /* $first-color: #cc4b2c;
 $first-color-dark: #662616;
@@ -651,7 +658,7 @@ img {
     width: initial;
   }
   .nav__menu {
-    width: 200px;
+    width: 600px;
   }
   .about__container,
   .skills__container,
@@ -711,6 +718,7 @@ img {
   .nav__menu {
     left: 0;
     background-color: #A181FF;
+    width: 200px;
   }
   .home__container {
     height: 100vh;
