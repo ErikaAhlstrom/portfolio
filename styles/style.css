@@ -1,70 +1,9 @@
 body {
   margin: 0 0 0 0;
-  font-family: 'Poppins', sans-serif;
-  font-size: .938rem;
-  font-weight: 500;
-  background-color: #fdfaff;
-  line-height: 1.6;
 }
 
 html {
   scroll-behavior: smooth;
-}
-
-#checkbox__container {
-  position: fixed;
-  right: 20px;
-  top: 10px;
-  z-index: 200;
-}
-
-.checkbox {
-  opacity: 0;
-  position: absolute;
-}
-
-.checkbox:checked + .label .ball {
-  -webkit-transform: translateX(24px);
-          transform: translateX(24px);
-  background-color: black;
-}
-
-.checkbox-background {
-  background-color: #ffffff !important;
-}
-
-.label {
-  width: 50px;
-  height: 26px;
-  background-color: #45386e;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 5px;
-  border-radius: 50px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: relative;
-}
-
-.ball {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  top: 2px;
-  left: 2px;
-  background-color: #f7f7f7;
-  position: absolute;
-  -webkit-transition: -webkit-transform 0.2s linear;
-  transition: -webkit-transform 0.2s linear;
-  transition: transform 0.2s linear;
-  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 
 /* ======= Mixins ======= */
@@ -84,8 +23,8 @@ $first-color-lighten: #fffafa; */
   /* ======= Margenes ======= */
   /* ======= Z index ======= */
   /* ======= BASE ======= */
-  /* ======= CLASS CSS ======= */
-  /* ======= LAYOUT ======= */
+  /* ======= Over all layout ======= */
+  /* ======= Theme Changer ======= */
   /* ======= Show Menu ======= */
   /* ======= Active Menu ======= */
   /* ======= Home ======= */
@@ -108,7 +47,6 @@ $first-color-lighten: #fffafa; */
 
 .original h1, .original h2, .original h3, .original p, .original span, .original a {
   margin: 0;
-  font-family: "Poppins", sans-serif;
 }
 
 .original h3 {
@@ -130,6 +68,16 @@ $first-color-lighten: #fffafa; */
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.original .main-container {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #fdfaff;
+  line-height: 1.6;
 }
 
 .original .section {
@@ -178,6 +126,56 @@ $first-color-lighten: #fffafa; */
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.original #checkbox__container {
+  position: fixed;
+  right: 20px;
+  top: 10px;
+  z-index: 200;
+}
+
+.original .checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.original .checkbox:checked + .label .ball {
+  -webkit-transform: translateX(24px);
+          transform: translateX(24px);
+  background-color: black;
+}
+
+.original .label {
+  width: 50px;
+  height: 26px;
+  background-color: #A181FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+  border-radius: 50px;
+  position: relative;
+}
+
+.original .ball {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  background-color: #f7f7f7;
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
 .original .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -205,7 +203,7 @@ $first-color-lighten: #fffafa; */
   position: fixed;
   top: 0;
   left: -120%;
-  width: 90%;
+  width: 70%;
   height: 100vh;
   padding: 3rem;
   background-color: #A181FF;
@@ -218,7 +216,7 @@ $first-color-lighten: #fffafa; */
   top: 0.1rem;
   right: 1rem;
   font-size: 2.5rem;
-  color: #45386e;
+  color: #fdfaff;
   cursor: pointer;
 }
 
@@ -723,7 +721,7 @@ $first-color-lighten: #fffafa; */
     position: fixed;
   }
   .original .nav__menu {
-    width: 900px;
+    width: 300px;
   }
   .original .about__container,
   .original .skills__container,
@@ -809,7 +807,7 @@ $first-color-lighten: #fffafa; */
         grid-template-columns: 1fr 1fr 1fr;
     font-size: 0.875rem;
   }
-  .original #about, .original #works, .original .education, .original .home {
+  .original #about, .original #works, .original .home {
     padding: 3rem 0 2rem 300px;
     height: 100vh;
   }
@@ -829,8 +827,8 @@ $first-color-lighten: #fffafa; */
   /* ======= Margenes ======= */
   /* ======= Z index ======= */
   /* ======= BASE ======= */
-  /* ======= CLASS CSS ======= */
-  /* ======= LAYOUT ======= */
+  /* ======= Over all layout ======= */
+  /* ======= Theme Changer ======= */
   /* ======= Show Menu ======= */
   /* ======= Active Menu ======= */
   /* ======= Home ======= */
@@ -853,7 +851,6 @@ $first-color-lighten: #fffafa; */
 
 .contrast h1, .contrast h2, .contrast h3, .contrast p, .contrast span, .contrast a {
   margin: 0;
-  font-family: "Poppins", sans-serif;
 }
 
 .contrast h3 {
@@ -875,6 +872,16 @@ $first-color-lighten: #fffafa; */
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.contrast .main-container {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #000000;
+  line-height: 1.6;
 }
 
 .contrast .section {
@@ -923,6 +930,56 @@ $first-color-lighten: #fffafa; */
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.contrast #checkbox__container {
+  position: fixed;
+  right: 20px;
+  top: 10px;
+  z-index: 200;
+}
+
+.contrast .checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.contrast .checkbox:checked + .label .ball {
+  -webkit-transform: translateX(24px);
+          transform: translateX(24px);
+  background-color: black;
+}
+
+.contrast .label {
+  width: 50px;
+  height: 26px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+  border-radius: 50px;
+  position: relative;
+}
+
+.contrast .ball {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  background-color: #f7f7f7;
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
 .contrast .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -950,7 +1007,7 @@ $first-color-lighten: #fffafa; */
   position: fixed;
   top: 0;
   left: -120%;
-  width: 90%;
+  width: 70%;
   height: 100vh;
   padding: 3rem;
   background-color: #ffffff;
@@ -963,7 +1020,7 @@ $first-color-lighten: #fffafa; */
   top: 0.1rem;
   right: 1rem;
   font-size: 2.5rem;
-  color: #cecbda;
+  color: #000000;
   cursor: pointer;
 }
 
@@ -1468,7 +1525,7 @@ $first-color-lighten: #fffafa; */
     position: fixed;
   }
   .contrast .nav__menu {
-    width: 900px;
+    width: 300px;
   }
   .contrast .about__container,
   .contrast .skills__container,
@@ -1554,7 +1611,7 @@ $first-color-lighten: #fffafa; */
         grid-template-columns: 1fr 1fr 1fr;
     font-size: 0.875rem;
   }
-  .contrast #about, .contrast #works, .contrast .education, .contrast .home {
+  .contrast #about, .contrast #works, .contrast .home {
     padding: 3rem 0 2rem 300px;
     height: 100vh;
   }

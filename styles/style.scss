@@ -1,60 +1,11 @@
 body {
     margin: 0 0 0 0;
-    font-family: 'Poppins', sans-serif;
-    font-size: .938rem;
-    font-weight: 500;
-    background-color: #fdfaff;
-    line-height: 1.6;
 }
 
 html {
     scroll-behavior: smooth;
 }
-#checkbox__container {
-    position: fixed;
-    right: 20px;
-    top: 10px;
-    z-index: 200;
-}
 
-.checkbox {
-    opacity: 0;
-    position: absolute;
-}
-
-.checkbox:checked + .label .ball {
-    transform: translateX(24px);
-    background-color: rgb(0, 0, 0);
-}
-
-
-.checkbox-background  {
-    background-color: #ffffff !important;
-}
-
-.label {
-    width: 50px;
-    height: 26px;
-    background-color: #45386e;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-    border-radius: 50px;
-    box-sizing: border-box;
-    position: relative;
-}
-
-.ball {
-    width: 22px;
-    height: 22px;
-    border-radius: 50%; 
-    top: 2px;
-    left: 2px;
-    background-color: rgb(247, 247, 247);
-    position: absolute;
-    transition: transform 0.2s linear;
-}
 
 /* ======= Mixins ======= */
 
@@ -102,7 +53,6 @@ $first-color-lighten: #fffafa; */
 ($theme-name, $theme-map) {
     .#{$theme-name} {
 
-
         $mainFont: 'Poppins', sans-serif;
 
         /* ======= ROOT ======= */
@@ -113,8 +63,6 @@ $first-color-lighten: #fffafa; */
         $font-medium: 500;
         $font-semi-bold: 600;
         $font-bold: 700;
-
-
 
         /* ======= Font and typography ======= */
         $body-font: 'Poppins', sans-serif;
@@ -152,7 +100,6 @@ $first-color-lighten: #fffafa; */
 
         h1, h2, h3, p, span, a {
             margin: 0;
-            font-family: $body-font;   
         }
 
         h3 {
@@ -177,7 +124,19 @@ $first-color-lighten: #fffafa; */
             display: block;    
         }
 
-        /* ======= CLASS CSS ======= */
+        /* ======= Over all layout ======= */
+
+        //body funkade inte i mixin, så fick skapa denna
+        .main-container {
+            width: 100%;
+            height: 100%;
+            font-family: $body-font;   
+            font-size: $normal-font-size;
+            font-weight: $font-medium;
+            background-color: map-get($theme-map, $key: first-color-lighten);
+            line-height: 1.6;
+
+        }
 
         .section{
             padding: 4rem 0 2rem;
@@ -201,7 +160,6 @@ $first-color-lighten: #fffafa; */
             margin-bottom: .25rem;
         }
 
-        /* ======= LAYOUT ======= */
         .bd-grid {
             max-width: 1024px;
             display: grid;
@@ -222,6 +180,48 @@ $first-color-lighten: #fffafa; */
             box-shadow: 0 2px 4px rgba(0,0,0,.1);
         }
 
+        /* ======= Theme Changer ======= */
+
+        #checkbox__container {
+            position: fixed;
+            right: 20px;
+            top: 10px;
+            z-index: 200;
+        }
+        
+        .checkbox {
+            opacity: 0;
+            position: absolute;
+        }
+        
+        .checkbox:checked + .label .ball {
+            transform: translateX(24px);
+            background-color: rgb(0, 0, 0);
+        }
+        
+        .label {
+            width: 50px;
+            height: 26px;
+            background-color: map-get($theme-map, $key: first-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+            border-radius: 50px;
+            position: relative;
+        }
+        
+        .ball {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%; 
+            top: 2px;
+            left: 2px;
+            background-color: rgb(247, 247, 247);
+            position: absolute;
+            transition: transform 0.2s linear;
+        }
+
         .nav {
             @include flexAlignCenter();
             height: $header-height;
@@ -238,7 +238,7 @@ $first-color-lighten: #fffafa; */
             position: fixed;
             top: 0;
             left: -120%;
-            width: 90%;
+            width: 70%;
             height: 100vh;
             padding: 3rem;
             background-color: map-get($theme-map, $key: first-color);
@@ -250,7 +250,7 @@ $first-color-lighten: #fffafa; */
             top: 0.1rem;
             right: 1rem;
             font-size: 2.5rem;
-            color: map-get($theme-map, $key: first-color-dark);
+            color: map-get($theme-map, $key: first-color-lighten);
             cursor: pointer;
         }
 
@@ -738,7 +738,7 @@ $first-color-lighten: #fffafa; */
             }
                 
             .nav__menu {
-                width: $nav-width * 3;
+                width: $nav-width;
             
             }
 
@@ -826,7 +826,6 @@ $first-color-lighten: #fffafa; */
                 left: 0;
                 background-color: map-get($theme-map, $key: first-color);
                 width: $nav-width;
-
             }
 
             .home__container {
@@ -852,7 +851,7 @@ $first-color-lighten: #fffafa; */
                 font-size: $small-font-size;
             }
 
-            #about, #works, .education, .home {
+            #about, #works, .home {
                 padding: 3rem 0 2rem $nav-width;
                 height: 100vh;
 
