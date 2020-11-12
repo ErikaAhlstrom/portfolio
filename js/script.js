@@ -54,3 +54,22 @@ function scrollActive() {
 
     })
 }
+
+let checkbox = document.getElementById("checkbox");
+let body = document.querySelector("body");
+let checkboxContainer = document.getElementById("label");
+
+checkbox.addEventListener("change", () => {
+    if(body.classList.contains("original")) {
+        body.classList.remove("original");
+        body.classList.add("contrast");
+
+        checkboxContainer.classList.add("checkbox-background");
+
+    } else {
+        body.classList.remove("contrast");
+        body.classList.add("original");
+        checkboxContainer.classList.remove("checkbox-background");
+
+    } 
+});

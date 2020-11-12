@@ -8,20 +8,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
+<body class="original body">
+<!--======= THEME CHANGER ========-->    
+    <div id="checkbox__container">
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" id="label" class="label">
+            <div class="ball"></div>
+        </label>
+    </div>
 <!--======= HEADER ========-->    
 <header class="one-header">
+
+
     <nav class="nav bd-grid">
         <!-- hamburger icon-->
         <div class="nav__toggle" id="nav-toggle">
             <i class='bx bx-menu'></i>
         </div>
-
-        <div>
-            <a href="#" class="nav__logo"><i class='bx bx-smile' ></i></a>
-        </div>
-        <!-- x icon -->
         <div class="nav__menu" id="nav-menu">
+            <!-- x icon-->
             <div class="nav__close" id="nav-close">
                 <i class='bx bx-x'></i>
             </div>
@@ -39,7 +44,7 @@
 </header>
 
 <!--======= HOME ========-->    
-<section class="home" id="home"> 
+<section class="home section" id="home"> 
 <div class="home__container bd-grid">
     <div class="home__data">
         <div role="img" aria-label="selfportrait" class="home__img img"></div>
@@ -137,7 +142,7 @@
             </div>
         </div>
 
-        <div class="education__nackademin ">
+        <div class="education__nackademin">
             <h2 class="education__nackademin-title section-title">About Nackademin</h2>
             <div class="education__nackademin-text">
                 <p class="education__description">Nackademin is a Vocational university which focuses on having educational programs related to what the job market is in need of right now. To always be up to date on that matter they have several companies on the bord who can keep the school updated on what’s going on in that particular field. </p>
@@ -231,7 +236,7 @@
     <h2 class="section-title">Get In Touch</h2>
 
     <div class="contact__container bd-grid">
-        <form action="" class="contact__form">
+<!--         <form action="" class="contact__form">
             <div class="contact__inputs">
                 <input aria-label="name input" type="text" placeholder="Name" class="contact__input">
                 <input aria-label="email input"type="mail" placeholder="Email" class="contact__input">
@@ -240,7 +245,7 @@
             <input aria-label="project input" type="text" placeholder="Project" class="contact__input">
             <textarea aria-label="content input" name="" id="" cols="0" rows="10" placeholder="Message" class="contact__input"></textarea>
             <input role="button" aria-label="submit message" type="submit" value="Send Message" class="button contact__button">
-        </form>
+        </form> -->
 
         <div>
             <div class="contact__info">
