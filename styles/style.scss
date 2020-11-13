@@ -182,6 +182,15 @@ $first-color-lighten: #fffafa; */
 
         /* ======= Theme Changer ======= */
 
+        .switch__description {
+            color: map-get($theme-map, $key: first-color);
+            position: fixed;
+            width: fit-content;
+            right:80px
+
+
+        }
+
         #checkbox__container {
             position: fixed;
             right: 20px;
@@ -273,7 +282,7 @@ $first-color-lighten: #fffafa; */
                 color: rgb(104, 104, 104);
               } @else {
                 color: map-get($theme-map, $key: text-color);
-              }
+            }
         }
 
 
@@ -319,7 +328,7 @@ $first-color-lighten: #fffafa; */
         .home__img {
             width: 160px;
             height: 160px;
-            background-image: url("../img/erika_1.png");
+            background-image: url("../img/portrait-erika-1.png");
             background-position: center;
             background-color: map-get($theme-map, $key: first-color);
             background-size: cover;

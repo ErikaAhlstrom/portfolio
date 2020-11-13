@@ -1,0 +1,73 @@
+-----Rapport Individuell Uppgift - Erika Ahlström-----
+
+-----Scrum----- 
+
+Scrum är en arbetsmetod som är väldigt vanlig inom mjukvaruutveckling och går ut på att arbetsteamet jobbar agilt i framställningen av den produkt som kunden beställt. Att jobba agilt betyder att man accepterar att man inte kan definiera alla problem som kan uppstå under utvecklingen av en produkt och att saker kan komma att ändras i beställningen, nya tekniker och regler kan dyka upp under resans gång. Så för att få ut maximalt av teamets kapacitet så måste man kunna anpassa sig till det som sker.  
+
+Ett scrum team består i regel av färre än 10 medlemmar som bryter upp arbetet i tidsbegränsade sprinter, i regel inte längre än en månad och vanligtvis 2 veckor. Sprintarnas längd ändras aldrig under utvecklingens gång. Teamet håller dagliga möten, daily scrums, 15 minuter långa och helst stående för effektivitetens skull där varje person snabbt går igenom hur det går i arbetet. I slutet av varje sprint hålls en Sprint Review där alla intressenter är välkomna att delta i genomgången av vad som jobbats med under sprinten och man visar upp produkten så som den ser ut nu. Teamet har även ett sprint retrospective möte där man pratar om hur arbetet fungerar och vad som kan förbättras i nästa sprint.  
+
+Det finns tre roller i ett scrum team: scrum master, produktägare och utvecklingsteam. Scrum mastern har tex ansvar för att scrum metoden följs, uppmuntra teamet att organisera sig själva och ta ansvar, se till att teamets behov för att kunna jobba bra blir uppfyllda och hjälpa produktägaren att underhålla product backlog.  
+
+Produktägaren är kundens representant och ansvarar för att produkten blir så bra som möjligt och att maximera värdet av utvecklingsteamets jobb samt prioritera kort i product backlog. Det är viktigt att produktägaren kan sätta sig in i beställarens, aktieägarnas och utvecklingsteamets behov och kommunicera bra mellan parterna.  
+
+Utvecklingsteamet är dom som utför arbetet givet av produktägaren. Alla medlemmar är likvärdiga men kan ha olika uppgifter såsom utvecklare, designers, testare etc. Teamet ska vara självorganiserande.  
+
+Diskussion 
+
+Efter att få ha testat på scrum metoden tycker jag att det verkar som ett otroligt bra sätt att jobba och definitivt mer effektivt än mer vattenfallsmodellenliknande metoder. Jag gillar också att det finns tydliga och beprövade regler för hur det ska gå till så att man slipper tänka på hur man ska jobba och istället fokusera på att faktiskt göra jobbet. Jag gillar också att det finns inskrivet i scrum metoden att teamets samarbete utvärderas och förbättras hela tiden med sprint retrospectives. Jag gjorde en film en gång för företaget CGI som handlade just om att jobba agilt och dom upplevde att deras kunder var väldigt positiva till att få vara delaktiga i processen hela vägen. Dom kunde justera beställningen så att det i slutändan blev den produkt dom faktiskt ville ha, vilken känns som en enorm fördel. 
+
+En nackdel skulle kunna vara att det tar ändå en del tid för alla inblandade att lära sig scrum och det kan kännas lite förvirrande i början med alla begrepp och roller vilket kanske minskar effektiviteten. Men när man väl har det implementerat så ökar effektiviteten istället. 
+
+-----Grafisk Profil-----
+
+En grafisk profil är en guide som beskriver den visuella identiteten hos en organisation. Den används för att kunna producera allt som representerar företagets ansikte utåt som tex content för digitala medier, tryckt material och hemsidor åt det givna företaget så att allt hänger ihop och går i linje med företagets stil. Den kan innehålla information om logotyper, textformatering och typsnitt, vilka färger som får användas och till vad. Det är viktigt för företag att ha en tydlig image utåt så att folk kan känna igen märket och på så vis sprids medvetenheten om företaget ute på marknaden.  
+
+Diskussion 
+
+En fördel med att ett företag har en bra och tydlig grafiskt profil är att det underlättar arbetet för alla som jobbar med företaget och ska skapa innehåll eller hemsidor mm. Det blir enklare att designa material för företaget eftersom det finns en tydlig mall för hur saker ska se ut vilket gör att det också blir enklare för företaget att hålla sin visuella profil i alla olika sammanhang. Det skulle lätt kunna bli struligt för ett stort företag att hålla ihop den visuella profilen om man måste förklara med ord hur saker ska se ut till varenda anställde eller frilansare som jobbar med att ta fram visuellt material till företaget varenda gång nåt ska produceras. Det kan snabbt resultera i att det börjar spreta i företagets image utåt.  
+
+En nackdel med att slaviskt följa en grafisk profil i framtagandet av en produkt till företaget är att det kan begränsa designarbetet och i viss mån strypa kreativiteten hos den som skapar produkten. Kanske kan bli svårt att tänka utanför boxen och skapa nånting extraordinärt eller unikt. Som skapare litar man väldigt mycket på sin magkänsla när man fattar beslut kring hur man vill designa en produkt. Vad händer då om man som skapare inte alls gillar färgkombinationerna eller typsnitten eller annat som företaget bestämt sig för? Det kan bli svårt att göra nånting bra om man inte gillar det man håller på att designa och inte längre kan lita på sin magkänsla när man fattar beslut kring vad som är snyggt eller fult, bra eller dåligt. 
+
+-----Tillgänglighet-----
+
+Att göra en hemsida tillgänglig går ut på att optimera sidan så att alla ska kunna ta del av innehållet. Det kan gälla t ex människor med olika funktionshinder, synskador eller äldre. De fyra viktigaste kraven för tillgänglighet är: 
+
+- Det ska gå att förstora/zooma utan att innehåll hamnar utanför skärmen. 
+
+- Det ska gå att navigera och använda alla funktioner via tangentbord eller röststyrning. 
+
+- Det ska gå att lyssna till innehållet via ett uppläsande hjälpmedel. 
+
+- Texten ska vara lätt att läsa och förstå. 
+
+Jag har själv tagit till mig dessa fyra punkter och försökt göra min sida i linje med dom viktigaste kraven. Många av kraven blev liksom automatiskt uppfyllde så jag har jobbat mer specifikt med följande 5 tillgänglighetskrav: 
+
+2.4.4 Skriv tydliga länkar 
+
+Jag har tänkt noga på hur jag döper länkar så att det ska bli så tydligt som möjligt och använt samma länktext till alla länkar på sidan som leder till samma sak, tex till mina sociala medier. Vid de tillfällena där länken bara är en ikon på sidan har jag lagt till aria-labels så att det ska gå att förstå även om man får sidan uppläst. Jag testade även att lada ner Chrome Vox för att höra hur det faktiskt blev när sidan blir uppläst, då kunde man lätt märka var saker blev otydliga och i så fall döpa om eller lägga till aria labels. Jag gjorde min mailadress till en klickbar länk m.h.a. mailto-attributet så att användaren får upp sitt mail program med min mail redan ifylld där. Lade även till download-attributet på min ‘dowload resume’ så att det blir tydligt vad som händer när man klickar där.  
+
+105 Skapa rubriker med h element 
+
+Det går ut på att man ska döpa sina rubrik-element utifrån hierarkiskt ordning och inte utifrån vilken textstorlek det bli i browsern. Jag har alltså utgått från semantiken i min html fil och skött storlek och styling i css istället.  
+
+9 Ge dokument filnamn som beskriver innehållet 
+
+Det går ut på att man ska kunna förstå av filmnamnet vad dokumentet innehåller, filer ska ha rätt filformat i namnet och man ska undvika konstiga tecken. Jag har gått igenom alla mina filer och försökt döpa dom så tydligt och korrekt jag kan. 
+
+115 Beskriv med text allt innehåll som inte är text 
+
+Detta är för att användare som är beroende av tex skärmläsare behöver beskrivning av allt innehåll som inte är text som tex bilder, diagram och animationer. Jag använder en del ikoner och bilder för att beskriva länkar vilket gjorde att jag fick använda mig av i första han alt-attributet för bilder men även aria-labels för att beskriva bilder som är länkar. Jag testade även att ladda ner Chrome Vox för att höra om resultatet blev logiskt och för att undvika upprepningar. Tex behövde man inte skriva i sin aria-label ‘link to github profile’ eftersom användaren redan förstått att det är en länk då rösten ändå läser av att det är ett a-element. Bättre för användaren att bara skriva ‘github profile’. 
+
+1.4.3 Använd tillräcklig kontrast mellan text och bakgrund 
+
+Det här var det kravet jag jobbade mest med. Det går ut på att man måste ha bra kontrast i färgerna man väljer på text och bakgrund så att det blir så enkelt som möjligt att läsa på hemsidan. Jag körde min hemsida genom web.dev och upptäckte att färgerna jag valt hade för låga kontraster. Jag fick tips och hjälp av Kicki Halmos om hur man kunde göra två olika teman för sin sida, vilket kändes som en kul utmaning och ett bra sätt att grotta ner sig lite i vad man kan göra med scss. Jag skapade en switch högst upp på sidan som växlar mellan min originalversion och en högkontrastversion. Det var väldigt utmanande och det uppstod många oförutsägbara problem, men det var definitivt värt det i slutändan eftersom jag lärde mig väldigt många nya grejer med scss.  
+
+Diskussion 
+
+Det är viktigt att tänka på digital tillgänglighet eftersom det mesta görs via internet nu för tiden. Det är där de flesta hittar sin information, underhållning eller köper varor och självklart är det toppen att alla kunna ta del av innehållet på internet.  
+
+Det är otroligt bra att det finns riktlinjer för detta som vi som webbutvecklare kan följa för att göra så tillgängliga sidor som möjligt, särskilt eftersom man själv annars kan ha svårt att se vilka problem som kan uppstå. Det är en fördel att tänka på tillgängligheten när man bygger hemsidor som man vill att allmänheten ska kunna ta del av, dels för användarna men även för ens egen skull. Det gör ju att du kan ha fler besökare på din sida.  
+
+Den enda nackdelen så som jag ser det är väl att det ibland kan uppstå konflikt mellan ens designvision och tillgängligheten men jag har insett nu att det inte behöver bli en konflikt, det finns ofta ett sätt att kunna uppfylla båda delarna. Och som vi pratade om på någon lektion så ingår det faktiskt i uppdraget att ha tillgänglighetsperspektivet i hur man designar sin hemsida. 
+
+ 

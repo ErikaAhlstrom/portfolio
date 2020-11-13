@@ -61,7 +61,7 @@
     let body = document.querySelector("body");
     let checkboxContainer = document.getElementById("label");
 
-    checkbox.addEventListener("change", () => {
+    checkbox.addEventListener("click", () => {
         if(body.classList.contains("original")) {
             body.classList.remove("original");
             body.classList.add("contrast");

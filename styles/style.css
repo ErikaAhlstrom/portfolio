@@ -126,6 +126,15 @@ $first-color-lighten: #fffafa; */
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.original .switch__description {
+  color: #A181FF;
+  position: fixed;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  right: 80px;
+}
+
 .original #checkbox__container {
   position: fixed;
   right: 20px;
@@ -280,7 +289,7 @@ $first-color-lighten: #fffafa; */
 .original .home__img {
   width: 160px;
   height: 160px;
-  background-image: url("../img/erika_1.png");
+  background-image: url("../img/portrait-erika-1.png");
   background-position: center;
   background-color: #A181FF;
   background-size: cover;
@@ -930,6 +939,15 @@ $first-color-lighten: #fffafa; */
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.contrast .switch__description {
+  color: #ffffff;
+  position: fixed;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  right: 80px;
+}
+
 .contrast #checkbox__container {
   position: fixed;
   right: 20px;
@@ -1084,7 +1102,7 @@ $first-color-lighten: #fffafa; */
 .contrast .home__img {
   width: 160px;
   height: 160px;
-  background-image: url("../img/erika_1.png");
+  background-image: url("../img/portrait-erika-1.png");
   background-position: center;
   background-color: #ffffff;
   background-size: cover;
