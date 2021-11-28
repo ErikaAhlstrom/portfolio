@@ -21,12 +21,12 @@ html {
 /* ======= COLORS ORIGINAL ======= */
 
 $original: (
-    first-color: #A181FF,
-    first-color-dark: #45386e,
-    first-color-draken: #211a35,
-    text-color: #4d4453,
-    first-color-light: #ded8e0,
-    first-color-lighten: #fdfaff
+    first-color: #CDB8FF,
+    first-color-dark: #a381d2,
+    first-color-draken: #8062b1,
+    text-color: #857e8a,
+    first-color-light: #e7d1ff,
+    first-color-lighten: #fcf9ff
 );
 
 /* ======= COLORS CONTRAST ======= */
@@ -413,6 +413,20 @@ $first-color-lighten: #fffafa; */
             margin: 0 auto;
             margin-bottom: $mb-3;
         }
+        .about__img-new {
+                     
+            width: 15rem;
+            height: 15rem;
+            margin: auto;
+            background-image: url("../img/portrait-erika-4.png");
+            background-position: center;
+            background-color: map-get($theme-map, $key: first-color);
+            background-size: cover;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: $mb-2;
+        
+        }
 
         .about__information {
             margin-bottom: $mb-4;
@@ -482,17 +496,35 @@ $first-color-lighten: #fffafa; */
             background-color: map-get($theme-map, $key: first-color);
         }
 
-        .skills__html {
-            width: 80%;   
+        .skills__10 {
+            width: 10%;   
         }
-        .skills__css {
-            width: 70%;   
+        .skills__20 {
+            width: 20%;   
         }
-        .skills__js {
+        .skills__30 {
+            width: 30%;   
+        }
+        .skills__40 {
+            width: 40%;   
+        }
+        .skills__50 {
+            width: 50%;   
+        }
+        .skills__60 {
             width: 60%;   
         }
-        .skills__ui {
+        .skills__70 {
             width: 70%;   
+        }
+        .skills__80 {
+            width: 80%;   
+        }
+        .skills__90 {
+            width: 90%;   
+        }
+        .skills__100 {
+            width: 100%;   
         }
 
 
@@ -501,6 +533,7 @@ $first-color-lighten: #fffafa; */
 
         .education__container {
             row-gap: 2rem;
+            margin-bottom: 7rem;
         }
 
         .education__content {
