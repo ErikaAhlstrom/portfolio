@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Portfolio Page" content="This is Erika Ahlström's portfolio page incuding her works, contact information and education.">
 
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Erikas Porfolio Page</title>
@@ -76,9 +76,13 @@
 
     <div class="about__container bd-grid">
         <div class="about__data">
-            <p class="about__description">Hi, I'm a soon to be web developer who is currently studying fullstack open source at Nackademin in Stockholm. I’m hungry for new projects and I'm currently looking for a company that would be interested in having me as an intern.  </p>
-            <p class="about__description">For the last couple of years I’ve been working as a freelance sound engineer, artist, music producer, film photographer and editor but I felt that it was time for a change. I’m so happy I get to take this step into the programming world and learn new things every day cause that’s the best feeling ever.</p>
-            <p class="about__description">My background is in music and media production and I’ve always had a passion for communicating ideas in the best possible way. I believe that my creative side really is an asset as a developer. </p>
+            <p class="about__description">Hi!
+            I'm a soon to be web developer who is currently doing my internship at the fabulous web bureau <a href="https://frankdigital.se/">Frank.</a></p>
+            <p class="about__description">Before I became a developer I worked as a freelance sound engineer and artist, but I felt that it was time for a change.
+            I’m so happy I get to take this step into the programming world and learn new things every day cause that’s the best
+            feeling ever.</p>
+            <p class="about__description">My background is in music and media production and I’ve always had a passion for communicating and presenting ideas in
+            the best way possible. I believe that my creative side really is an asset as a developer.</p>
         </div>
         <div>
             <div class="about__information">
@@ -96,7 +100,7 @@
                     <span>info@erikasoldh.se</span>
                 </div>
             </div>
-            <img src="./img/portrait-erika-2.jpg" alt="selfportrait" class="about__img">
+            <div role="img" aria-label="selfportrait" class="about__img-new img"></div>
         </div>
 
     </div>
@@ -106,7 +110,7 @@
 
 <!--======= EDUCTATION ========-->    
 <section class="education section" id="education">
-    <span class="section-subtitle">Qualification</span>
+    <span class="section-subtitle">Degrees</span>
     <h2 class="section-title">My Eductaion</h2>
 
     <div class="education__container bd-grid">
@@ -143,8 +147,9 @@
                 <h3 class="education__race">Vocational University</h3>
                 <span class="education__speciality">Webbdeveloper Fullstack Open Source</span>
             </div>
-        </div>
 
+        </div>
+<!-- 
         <div class="education__nackademin">
             <h2 class="education__nackademin-title section-title">About Nackademin</h2>
             <div class="education__nackademin-text">
@@ -152,7 +157,7 @@
                 <p class="education__description">All teachers at Nackademin are actually consultants who also work with what they are teaching. In that way we learn techniques that are really up to date and useful for what we’re going to do when we graduate.</p>
                 <p class="education__description">Internships are really important part of studying at Nackademin because that’s usually how you get a job after you graduate. We start thinking about it and preparing from day one. The school provide opportunities for students to meet with both companies on the bord and others to give us the best chances to get a job after graduation. </p>
             </div>    
-        </div>
+        </div> -->
 
     </div>
 </section>
@@ -166,34 +171,34 @@
 
     <div class="works__container bd-grid">
         <div class="works__img">
-            <img src="./img/works-quiz.jpg" alt="quiz">
+            <img src="./img/works-blog.svg" alt="blog">
+
             <div class="works__data">
-                <a aria-label="quiz page" href="https://erikaahlstrom.github.io/quiz/"><i class='bx bx-link-alt' ></i></a>
+                <a aria-label="blog page" href="https://gatsbyplantblog.gatsbyjs.io/"><i class='bx bx-link-alt' ></i></a>
+                <span class="works__title">Blog</span>
+            </div>
+        </div>
+        <div class="works__img">
+            <img src="./img/works-notes.svg" alt="notes">
+
+            <div class="works__data">
+                <a aria-label="notes page" href="https://mern-jwt-notes-app-client.herokuapp.com/"><i class='bx bx-link-alt' ></i></a>
+                <span class="works__title">Notes App</span>
+            </div>
+        </div>
+        <div class="works__img">
+            <img src="./img/works-online-store.svg" alt="online store">
+
+            <div class="works__data">
+                <a aria-label="online store page" href="https://aqueous-castle-08428.herokuapp.com"><i class='bx bx-link-alt' ></i></a>
+                <span class="works__title">Online Store</span>
+            </div>
+        </div>
+        <div class="works__img">
+            <img src="./img/works-quiz.svg" alt="quiz">
+            <div class="works__data">
+                <a aria-label="quiz page" href="https://erikaahlstrom.github.io/quiz/"><i class='bx bx-link-alt'></i></a>
                 <span class="works__title">Quiz</span>
-            </div>
-        </div>
-        <div class="works__img">
-            <img src="./img/works-event.jpg" alt="event">
-
-            <div class="works__data">
-                <a aria-label="event page" href="https://erikaahlstrom.github.io/Acmeevents/"><i class='bx bx-link-alt' ></i></a>
-                <span class="works__title">Event Page</span>
-            </div>
-        </div>
-        <div class="works__img">
-            <img src="./img/works-todo.jpg" alt="to-do">
-
-            <div class="works__data">
-                <a aria-label="temporarly inactive" href="#"><i class='bx bx-link-alt' ></i></a>
-                <span class="works__title">To Do List</span>
-            </div>
-        </div>
-        <div class="works__img">
-            <img src="./img/works-yatzy.jpg" alt="yatzy">
-
-            <div class="works__data">
-                <a aria-label="yatzy page" href="https://erikaahlstrom.github.io/YatzyCollab/"><i class='bx bx-link-alt' ></i></a>
-                <span class="works__title">Yatzy</span>
             </div>
         </div>
     </div>
@@ -209,24 +214,54 @@
         <div class="skills__content">
             <h3 class="skills__subtitle">Skills</h3>
             <div class="skills__data">
+                <span class="skills__name">Webbdesign</span>
+                <span class="skills__number">60%</span>
+                <span class="skills__bar skills__60"> </span>
+            </div>
+            <div class="skills__data">
                 <span class="skills__name">Html</span>
                 <span class="skills__number">80%</span>
-                <span class="skills__bar skills__html"></span>
+                <span class="skills__bar skills__80"></span>
             </div>
             <div class="skills__data">
                 <span class="skills__name">Css/Scss</span>
-                <span class="skills__number">70%</span>
-                <span class="skills__bar skills__css"></span>
+                <span class="skills__number">80%</span>
+                <span class="skills__bar skills__70"></span>
             </div>
             <div class="skills__data">
                 <span class="skills__name">Java Script</span>
-                <span class="skills__number">60%</span>
-                <span class="skills__bar skills__js"></span>
+                <span class="skills__number">80%</span>
+                <span class="skills__bar skills__80"></span>
             </div>
             <div class="skills__data">
-                <span class="skills__name">UI/UX</span>
+                <span class="skills__name">React</span>
+                <span class="skills__number">80%</span>
+                <span class="skills__bar skills__80"></span>
+            </div>
+            <div class="skills__data">
+                <span class="skills__name">Gatsby</span>
+                <span class="skills__number">50%</span>
+                <span class="skills__bar skills__60"></span>
+            </div>
+            <div class="skills__data">
+                <span class="skills__name">Node.js</span>
+                <span class="skills__number">60%</span>
+                <span class="skills__bar skills__50"> </span>
+            </div>
+            <div class="skills__data">
+                <span class="skills__name">PHP</span>
+                <span class="skills__number">20%</span>
+                <span class="skills__bar skills__20"> </span>
+            </div>
+            <div class="skills__data">
+                <span class="skills__name">Mongo DB</span>
                 <span class="skills__number">70%</span>
-                <span class="skills__bar skills__ui"> </span>
+                <span class="skills__bar skills__70"> </span>
+            </div>
+            <div class="skills__data">
+                <span class="skills__name">My SQL</span>
+                <span class="skills__number">20%</span>
+                <span class="skills__bar skills__20"> </span>
             </div>
         </div>
     </div>
@@ -251,11 +286,6 @@
         </form> -->
 
         <div>
-            <div class="contact__info">
-                <h3 class="contact__subtitle">Call Me</h3>
-                <span class="contact__text">+46 70 49 67 867 </span>
-            </div>
-
             <div class="contact__info">
                 <h3 class="contact__subtitle">Email Me</h3>
                 <a aria-label="my email adress" href="mailto:info@erikasoldh.se" class="contact__text">info@erikasoldh.se</a>
